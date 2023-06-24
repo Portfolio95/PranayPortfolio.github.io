@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="./design.css">
+  <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Stylish&display=swap" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+</head>
+<body>
+  <script>
+$(document).ready(function() {
+  $("#enlarged-image").click(function(e) {
+    if ($(e.target).is("#enlarged-image")) {
+      $(this).hide();
+      window.location.href = window.location.href.split('#')[0]; // Remove the hash from the URL
+    }
+  });
+
+  $(".close").click(function() {
+    $("#enlarged-image").hide();
+    window.location.href = window.location.href.split('#')[0]; // Remove the hash from the URL
+  });
+});
+
+  </script>
+  <header>
+    <a href="#" class="logo">My<span>P</span>ortfolio</a>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#expectations">Expectations</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home">
+      <h2>Home</h2>
+      <div class="home-text" style="display: flex;">                
+        <div style="display: flex; flex-direction: column" >
+            <div class="slide">
+              <br>
+                <span class="one">Hello</span>
+                <span class="two">This is our son</span>
+            </div>
+            <div style="display: flex; flex-direction: column">
+              <br>
+                <h1 style="color:rgb(185, 231, 17);">Pranay</h1>
+                <br>
+                <h3>Cyber Security <span>Engineer</span></h3>
+            </div>
+        </div>                
+      <!--<div class="image-add">
+            <img src="./Pranay.jpeg" alt="" class="thumbnail">
+        </div>-->
+        <div class="container">
+          <a href="#enlarged-image">
+            <img src="./Pranay.jpeg" alt="Your Image" class="thumbnail">
+          </a>
+        </div>
+        
+        <div id="enlarged-image">
+          <div class="enlarged-content">
+            <span class="close">&times;</span>
+            <img src="./Pranay.jpeg" alt="Your Image" class="enlarged">
+          </div>
+        </div>
+    </div>
+</section>
+    </section>
+
+    
+
+    <section id="about">
+        <div class="about-text">
+            <div class="innerDiv">
+                <h2>About</h2>
+                <li>Full name:  <span class="name">Pranay Raman</span></li>
+                <li>DOB:  <span class="name">06/10/1995</span></li>
+                <li>Height:<span class="name"> 5'8''</span></li>
+                <li>Gothram:  <span class="name">Vaadhulasa (Iyengar, Vadagalai)</span></li>
+                <li>Nakshatram: <span class="name">Poorvabhadra</span>  </li>
+                <br>
+
+           <br>
+                <h3>Education Details</h3>
+                <br>
+                <li>Masters: <span class="name">University of FrankFurt(Germany)</span> </li>
+                <li>Specialization: <span class="name">High Integrity Systems</span></li>
+                
+                <li>Bachelors: <span class="name">Mallareddy institute of technology(Hyderbad,India)</span></li>
+                <li>Specialization: <span class="name">Information Technology</span></li>
+                <li></li>
+                <br>
+            <h3>Employment Details</h3>
+            <br>
+                <li>Company: <span class="name">Clark Holding SE</span></li>
+                <li>Location: <span class="name">Germany</span> </li>
+            <br>
+            <h3>Family Details</h3>
+            <br>
+            <li>Father:  <span class="name">Tiru Venkata Raghu Raman</span>
+            <p>M.A,MBA graduate, Working for LIC</p>
+            </li>
+            <br>
+            <li>Mother:  <span class="name">Meera Raman</span> </li>
+            <p>BCOM graduate, House Wife</p>
+            <br>
+            <li>Brother: <span class="name">Prathik Raman (Younger)</span></li>
+            <p>IT graduate, working for Opentext as a Software Engineer</p>
+            </div>
+    </section>
+    <section id="expectations">
+      <br>
+        <h2>Expectations</h2>
+        <li>Working B.Tech Graduate</li>
+        <li>Willing to re-locate to Germany</li>
+        <li>Decent looking girl who gives importance to tradition and family values</li>
+        <br>
+        
+      </section>
+    <section id="contact">
+      <br>
+      <h2>Contact Information</h2>
+      <br>
+      <h3>Mobile: <span>9440329291</span>(Raghu)<br><span>9493529291</span>(Meera)</h3>
+    
+    </section>
+  </main>
+
+  
+</body>
+<footer>
+    <p>&copy; Thank you</p>
+  </footer>
+</html>
